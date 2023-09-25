@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-eqviv="X-UA-Compatible" content="IE=edge">
+    <link name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARCHI RATHI - Portfolio</title>
+    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container"></div>
+        <nav>
+            <img src="image/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div><class="header-text"></div>
+        <p> UI/UX DESIGNER</p>
+        <h1> Hey, I'm <span> Archi </span><br>Rathi from India</h1>
+    </div>
+    <!-----------------about------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                <img src="image/user.png" width="400" height="500">
+                </div>
+                <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a student of Government Engineering College, Gandhinagar.
+                <br>Highly motivated and enthusiastic individuals with a passion for continuing learning and professional growth.</br>
+                </p>
+                <div class ="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p> 
+                    <p class="tab-links" onclick="opentab('education')">Education</p> 
+                </div>
+                <div class ="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI?UX</span>  Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span>  Web app Development</li>
+                        
+                        
+                    </ul>
+                </div>
+                <div class ="tab-contents" id="experience">
+                    
+                    <ul>
+                        
+                        <li><span>2021-2022</span>  at Infolabz</li>
+                        <li><span>2022(for 3 months)</span> Internship at Infolabz under project to develop website on fitness</li>
+                        
+                    </ul>
+                </div>
+                <div class ="tab-contents" id="education">
+                    <ul>
+                        <li><span>2017</span>  SSC pass out from ST.ANN'S HIGH SCHOOL</li>
+                        <li><span>2019-2021</span>  Diploma in Computer Engineering from Government Polytechnic for Girls, Ahemdabad</li>
+                        <li><span>2022-currently</span> B.tech in Computer Engineering from Government Engineering  College, Sector28, Gandhinagar</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!---------------------services---------------------------->
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design </h2>
+                <p>The process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience. 
+                User experience is central to the web designing process. 
+                Websites have an array of elements presented in ways that make them easy to navigate</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-desktop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UX design involves managing the user journey as they interact with a product or service, while UI design focuses on the actual construction of that product or service's interface. 
+                    UI design is usually considered part of the UX design process.</p>
+                    <a href="#">Learn More</a>
+            </div>
+            
+        </div>
+       
+            
+        </div>
+    </div>
+   </div>
+   <!---------------------------portfolio---------------------------->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+            <img src="image/work1.png">
+            <div class="layer">
+                <h3>Social Media</h3>
+                <p> The means of interactions among people in which they create, share, and/or exchange information and ideas in virtual communities and networks. The Office of Communications and Marketing manages the main Facebook, Twitter, Instagram, LinkedIn and YouTube accounts.</p>
+                <a href="#"><i class="fa-solid fa-icons"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="image/work2.png">
+            <div class="layer">
+                <h3>Fitfab(webapp)</h3>
+                <p> Fitness can be described as a condition that helps us look, feel and do our best. Physical fitness involves the performance of the heart and lungs, and the muscles of the body.
+                </p>
+                <a href="#"><i class="fa-solid fa-dumbbell" style="color: #18263f;"></i></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="image/work3.png">
+            <div class="layer">
+                <h3>Online cafe management(webapp)</h3>
+                <p> An online ordering and delivery system provides a complete sales channel for the restaurant. This means that the restaurant can use it as a tool for generating more profits and organizing the restaurant better. It also allows restaurant owners to save on labor costs and restaurant space needed to serve such customers.</p>
+                <a href="#"><i class="fa-solid fa-utensils"></i></i></a>
+            </div>
+        </div>
+        </div>
+        <a href ="#" class="btn">See More</a>
+    </div>
+   </div>
+<!-----------------------------CONTANCT------------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1  class="sub-title"> Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i></i>  archirathi02@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i> 9104518761</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://www.linkedin.com/in/archi-rathi-326a8922a"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a href="image/resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+    <p>Copyright @archi.  Made with <i class="fa-solid fa-heart"></i>  love</p>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+   function  opentab(tabname){
+        for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+        for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+   }
+   event.currentTarget.classList.add("active-link");
+   document.getElementById(tabname).classList.add("active-tab")
+}
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+     }
+
+     function closenmeu(){
+        closemeu.style.right = "-200px";
+     }
+</script>
+<!-- <form name="submit-to-google-sheet">
+    <input name="email" type="email" placeholder="Email" required>
+    <button type="submit">Send</button>
+  </form> -->
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwkGx9KKNDqT-qjMHrJBU7u8yxLICFdzyZP1BJToFMH4RjWtDS8bmJuDkM-UhhLoSu9/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent  Successfully"
+            setTimeout(function(){
+                innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
