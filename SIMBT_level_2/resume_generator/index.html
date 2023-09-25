@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Resume Generator </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+         rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+    
+        <link rel="stylesheet" href="style.css"/>
+        
+    </head>
+    <body>
+        <!------here goess html code------>
+        <div class="container"  id="cv-form">
+        <h1 class="text-center my-2"> Resume Generator</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <!----first-->
+                <h3> Personal Information </h3>
+                <div class="form-group">
+                    <label for="nameField"> Your Name</label>
+                    <input type="text" id="nameField" placeholder="Enter Name" class="form-control">
+                </div>
+            
+             <div class="form-group mt-2">
+                <label for="contactField"> Your Contact</label>
+                <input type="text" id="contactField" placeholder="Enter Here" class="form-control">
+            </div>
+
+            <div class="form-group mt-2">
+                <label for="addressField"> Your Address</label>
+                <textarea id="addressField" placeholder="Enter Here" class="form-control" rows="5"></textarea>
+            </div>
+
+            <div class="form-group mt-3">
+                <label for="imgField">Select your profile picture</label>
+                <input  id="imgField" onchange="loadFile(event)" type="file" class="form-control" accept="image/*">
+            </div>
+
+            <p class="text-secondary my-3">Important Links</p>
+
+            <div class="form-group mt-2">
+                <label for="fbField"> Facebook </label>
+                <input type="text" id="fbField" placeholder="Enter Here" class="form-control">
+            </div>
+
+            <div class="form-group mt-2">
+                <label for="instaField"> Instagram</label>
+                <input type="text" id="instaField" placeholder="Enter Here" class="form-control">
+            </div>
+
+            <div class="form-group mt-2">
+                <label for="linktField"> LinkedIn</label>
+                <input type="text" id="linkField" placeholder="Enter Here" class="form-control">
+            </div>
+
+         </div>
+             <div class="col-md-6">
+                <!----second-->
+             <h3>Professional Information</h3>
+
+             <div class="form-group mt-2">
+                <label for=""> Objective</label>
+                <textarea rows="5"  id="objectiveField" placeholder="Enter Here" class="form-control"></textarea>
+            </div>
+
+            <div class="form-group mt-2" id="we">
+                <label for="">Work Experience</label>
+                <textarea  rows="3" placeholder="Enter Here" class="form-control weField"></textarea>
+
+                <div class="container text-center mt-2" id="weAddButton">
+                    <button  onclick="addNewWEField()" class="btn btn-primary btn-sm">Add</button>
+                </div>
+
+                <div class="form-group mt-2" id="aq">
+                    <label for=""> Academic Qualifications</label>
+                    <textarea  rows="3" placeholder="Enter Here" class="form-control eqfield"></textarea>
+
+                    <div class="container text-center mt-2" id="aqAddButton">
+                        <button  onclick= "addNewAQField()"  class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+             </div>
+             </div>
+             <div class="container text-center mt-3">
+                <button onclick="generateCV()" class="btn btn-primary btn-lg">Generate CV</button>
+                
+             </div>
+
+        
+            </div>
+
+            <!----cv template------>
+
+            <div class="container" id="cv-template">
+                <div class="row">
+                    <div class="col-md-4 text-center py-5 background">
+                        <!---first--------------->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTig3r-OWK-Wwye0JazGBwc2beX-8VAV4cvjasALmg&s.jpg" alt=""  class="img-fluid myimg" id="imgTemplate"/>
+                        <div class="container">
+                            <p id="nameT1">Archi Rathi</p>
+                            <p id="contactT">9104518761</p>
+                            <p id="addressT">17 Jalsabar society Ahemadabad-5, Gujarat</p>
+                            <hr/>
+                            
+                            <p><a id="fbT" href="#1">https://www.facebook.com/archirathi</a></p>
+                            <p><a id="instaT" href="#2">https://www.instagram.com/_aarchi_rathi</a></p>
+                            <p><a id="linkedT" href="#3">https://www.linkedin.com/in/archi-rathi-326a8922a</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-8 pyt-5">
+                    <!----second-------------------->
+                    <h1 id="nameT2" class="text-center" style="font-weight: 980"> ARCHI RATHI</h1>
+
+                    <div class="card mt-4">
+                        <div class="card-header background">
+                            <h3>Objective</h3>
+                        </div>
+                        <div class="card-body">
+                            <p id="objectiveT">Secure a responsible career opportunity to fully utilize my training and skills, while making a significant contribution to the success of the company.31 </p>
+                        </div>
+                    </div>
+
+                    <div class="card mt-4">
+                        <div class="card-header background">
+                            <h3>Work Experience</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul id="wqT">
+                                <li>CREART SOLUTIONS: IN PHP</li>
+                                <li>INFOLABZ.PVT.LTD: IN PYTHON</li>
+                                <li>INFOLABZ.PVT.LTD: IN PHP and build php project developed at Infolabz on fitness management system</li>
+                                <li>SIMPLBYTE: currently working with html,css,js</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card mt-4">
+                        <div class="card-header background">
+                            <h3>Academic Qualifications</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul id="aqT">
+                                <li>COMPLETED 10th(SSC) WITH 75% IN 2017 :ST ANN’S HIGH SCHOOL ,KABIR CHOWK
+                                    SABARMATI ,AHEMDABAD-5</li>
+                                <li>Diploma in Computer Enginnering CGPA:9.3: GOVERNMENT POLYTEHNIC FOR GIRLS, 
+                                    AHMEDABAd,</li>
+                                <li>B.Techin Computer Enginnering CGPA:6.3(TILL 3RD SEM): GOVERNMENT ENGINNERING COLLEGE ,SECTOR 28,GANDHINAGAR</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                     <div class="container mt-3 text-center">
+                        <buttton onclick="printCV()" class="btn background">Print CV</buttton>
+                        
+                     </div>
+                    
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+         <script src="script.js"></script>
+        </body>
+        </html>
